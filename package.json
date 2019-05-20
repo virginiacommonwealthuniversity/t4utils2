@@ -10,12 +10,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-header": "^1.8.8",
+    "gulp": "^4.0.2",
+    "gulp-empty": "^0.1.2",
+    "gulp-header": "^2.0.7",
     "gulp-include": "^2.3.1",
-    "gulp-jsdoc3": "^0.3.0",
+    "gulp-jsdoc3": "^2.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-uglify": "^2.0.0"
+    "gulp-replace": "^1.0.0",
+    "gulp-uglify": "^3.0.2"
   }
 }
