@@ -1,5 +1,3 @@
-[![Powered by Virginia Commonwealth University](https://t4tools.vcu.edu/github/images/powered-by.svg)](http://www.vcu.edu/)
-
 # T4Utils 2
 A Javascript library of utility classes and extensions for TerminalFour Programmable Layouts. This repo is a port/continuation of [Ben Margevicius'](https://github.com/bdm4) unmaintained [T4Utils](https://github.com/FPBSchoolOfNursing/T4Utils) library.
 
@@ -18,19 +16,40 @@ This update enhances the structure, performance, and extensiveness of the `ordin
 Check out the [changelog](changelog.md) for previous release information.
 
 ## Table of contents
-* [Quick start](#quick-start)
+* [Installation](#installation)
+* [Development](#development)
 * [Documentation](#documentation)
 * [Contributing](#contributing)
 * [Contributors](#contributors)
 
-## Quick start
-There's a couple different ways you can get your hands on the T4Utils 2 library:
+## Installation
+There's a couple different ways you can get your hands on the T4Utils 2 library. You can either [download one of the latest releases](https://github.com/virginiacommonwealthuniversity/T4Utils2/releases) or run the following in your terminal:
 
-1. [Download one of the latest releases](https://github.com/virginiacommonwealthuniversity/T4Utils2/releases)
-2. Clone the repo, `npm install`, and `gulp` (Requires [Node](https://nodejs.org/))
+```shell
+git clone git@github.com:virginiacommonwealthuniversity/T4Utils2.git
+cd T4Utils2
+npm i
+```
+
+## Development
+```shell
+# npm run * / npx gulp *
+# *:exp = expanded, *:min = minified
+
+# Build the file
+npm run build
+npm run build:exp
+npm run build:min
+
+# Generate the documentation
+npm run docs
+
+# Watch and build the file on change
+npm run watch
+```
 
 ## Documentation
-The T4Utils 2 build environment comes with a JSDoc3 Gulp task. To build out the HTML documentation, run `$ gulp docs` and look in the `docs` directory within the project. This documentation can then be previewed within a web browser or uploaded to server.
+The T4Utils 2 build system comes with a JSDoc3 Gulp task. To build out the HTML documentation, run `npm run docs` and look in the `docs` directory within the project. This documentation can then be previewed within a web browser or uploaded to a server.
 
 ## Contributing
 Please read through the [contribution guidelines](contribute.md) before opening issues or contributing code.
