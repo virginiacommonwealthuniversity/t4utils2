@@ -1,12 +1,15 @@
-let datestamp = require('./datestamp.js'),
-    header =    require('gulp-header'),
-    pkg =       require('../package.json');
+const datestamp = require('./datestamp.js'),
+    header      = require('gulp-header'),
+    pkg         = require('../../package.json');
+
 
 module.exports = format => {
-    let banner,
-        info = {
-            date: datestamp()
-        };
+    const info = {
+        date: datestamp()
+    };
+
+    let banner;
+
     switch (format) {
     case 'exp':
         banner =
@@ -26,5 +29,5 @@ module.exports = format => {
 `;
         break;
     }
-    return header(banner, {pkg, info});
+    return header(banner, { pkg, info });
 };
