@@ -2,7 +2,14 @@
   "name": "t4-utils-2",
   "version": "1.7.1",
   "description": "A Javascript Library of Utility Classes and Extensions for TerminalFour Programmable Layouts",
-  "main": "dist/8.4/T4Utils.min.js",
+  "main": "dist/T4Utils.min.js",
+  "scripts": {
+    "build": "npx gulp build",
+    "build:exp": "npx gulp build:exp",
+    "build:min": "npx gulp build:min",
+    "docs": "npx gulp docs",
+    "watch": "npx gulp watch"
+  },
   "author": "Joel Eisner <eisnerjr@vcu.edu>",
   "repository": {
     "type": "git",
